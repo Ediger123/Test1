@@ -174,7 +174,7 @@ nav {
     font-family: 'Inter', sans-serif;
     width: 100%;
       color: var(--color-neutral-40);
-    margin-top: 2000px;
+    margin-top: 700px;
   }
   
   .LumenLogo{
@@ -320,3 +320,109 @@ nav {
           padding: 3rem 2rem;
       }
   }
+
+  /*--------------Comprometimento natu---------------*/
+
+  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+
+
+.random-name {
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  padding: 50px;
+  background-image: url(Inserir\ um\ título\ \(2\).jpg);
+  background-size: 100%;
+}
+
+.random-name h1 {
+  font-size: 50px;
+  border: 4px solid white;
+  background-color: #a3ac56;
+  color: white;
+  border-radius: 50px;
+  padding: 30px 90px;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+
+.random-meios {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.random-meio {
+  border-radius: 20px;
+  height: 330px;
+  width: 320px;
+  background-color: rgb(255, 255, 255);
+  margin-right: 50px;
+  display: inline-block;
+  text-align: center;
+  padding: 5px;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+}
+
+.random-meio img {
+  border-radius: 15px 15px 0 0;
+  display: block;
+  width: 100%;
+  height: 200px;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  margin: 0;
+}
+
+.random-meio h3 {
+  margin-top: 10px;
+}
+
+.random-meio p {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: 5px;
+  color: rgb(0, 0, 0);
+}
+
+.random-meio:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.random-meio:hover img {
+  transform: translateY(-5px);
+}
+
+@media screen and (max-width: 768px) {
+  .random-meios {
+    flex-wrap: wrap;
+  }
+
+  .random-meio {
+    flex: 0 0 calc(50% - 20px);
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .random-meio {
+    flex: 0 0 calc(100% - 20px);
+    margin-bottom: 30px;
+  }
+}
+.random-name h1 {
+  font-size: 50px;
+  border: 4px solid white;
+  background-color: #a3ac56;
+  color: white;
+  border-radius: 50px;
+  padding: 30px 90px;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.random-name h1:hover {
+  transform: scale(1.05);
+}
