@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.parcelamento-box {
+    border: 2px solid #000000;
+    background-color: white;
+    border-radius: 4px;
+    max-width: 50rem;
+    padding: 2px;
+    position: relative;
+    width: 100%;
+    margin: 50px auto;
+}
+.boox p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+ul {
+    border: solid 2px #000000;
+    list-style-type: none;
+    padding: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+span {
+    font-weight: bold;
+}
+.box{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    background-color:#F6C937;
+    color: rgb(0, 0, 0);
+}
+.box h2{
+    padding-left: 20px;
+}
+.boox{
+    padding: 20px;
+}

@@ -9,8 +9,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./swiper-bundle.min.css">
     <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style.css">
+
+    
 
 <body>
     <header>
@@ -22,10 +25,10 @@
                 <div class="line3"></div>
             </div>
             <ul class="nav-list">
-                <li><a href="/">Home</a></li>
-                <li><a href="/">Sobre</a></li>
-                <li><a href="/">Projetos</a></li>
-                <li><a href="/">Contatos</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#Sobre">Quem Somos</a></li>
+                <li><a href="#Produtos">Produtos</a></li>
+                <li><a href="./Janelas/error.html">Contatos</a></li>
             </ul>
             <div class="login-button">
                 <button><a href="login.html">Login</a></button>
@@ -38,7 +41,7 @@
         <img src="energia.svg" alt="" class="imgSol">
         <div class="column">
             <img src="casa.svg" alt="" class="casa">
-            <div class="row">
+            <div class="row" id="Sobre">
                 <h2>Quem somos?</h2>
                 <p>Somos uma distribuidora de equipamentos <br>
                     de energia solar fotovoltaica movida pela inovação <br>
@@ -74,51 +77,97 @@
                 <p>A energia solar exige menos interferência nos ecossistemas para ser adquirida.</p>
               </div>
             </div>
-          </div>
+          </div >
 
-          <h1 class="produtos">PRODUTOS</h1>
+          <h1 id="Produtos" class="produtos">PRODUTOS</h1>
           <br>
           <br>
-          <div class="Cardss">
-            <div class="card">
-                <div class="imgBx">
-                    <img src="Captura_de_Tela__2_-removebg-preview.png" alt="">
-                </div>
-                <div class="contentBx">
-                    <h3>Kit Bomba- Solar Tpon <br>
-                        3TPS1.2-77-24-210W
-                        </h3>
-                        <h2 class="price">R$ 2.428,<small></small>50</h2>
-                        <a href="./Janelas/kitBomba.html" class="buy">Mais informações</a>
+          <br>
+          <section class="secion">
+          <div class="slide-container swiper">
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <div class="card2">
+                            <div class="imgBx">
+                                <img src="./Captura_de_Tela__3_-removebg-preview-removebg-preview.png" alt="">
+                            </div>
+                            <div class="contentBx">
+                                <h3>Kit Bomba- Solar Tpon <br>
+                                    PLACA 3TPS1.2-77-24-210W </h3>
+                                <h2 class="price">R$ 2.428,<small>50</small></h2>
+                                <a href="./Janelas/kitBomba.html" class="buy">Mais Informações</a>
+                            </div>
+                        </div>
+                    </div><div class="card swiper-slide">
+                        <div class="card2">
+                            <div class="imgBx">
+                                <img src="./Captura_de_Tela__2_-removebg-preview.png" alt="">
+                            </div>
+                            <div class="contentBx">
+                                <h3>Placa Solar 550W <br>
+                                    Monocristalina - LNVU
+                                </h3>
+                                <h2 class="price">R$ 1.299,<small>00</small></h2>
+                                <a href="#" class="buy">Mais Informações</a>
+                            </div>
+                        </div>
+                    </div><div class="card swiper-slide">
+                        <div class="card2">
+                            <div class="imgBx">
+                                <img src="./KIT-3-removebg-preview-removebg-preview.png" alt="">
+                            </div>
+                            <div class="contentBx">
+                                <h3>Kit Gerador 2,30kWp <br> Deye c/WIFI SUN2000-OSDA</h3>
+                                <h2 class="price">R$ 7.099<small>,00</small></h2>
+                                <a href="#" class="buy">Mais Informações</a>
+                            </div>
+                        </div>
+                    </div><div class="card swiper-slide">
+                        <div class="card2" style="order: 1;">
+                            <div class="imgBx">
+                                <img src="./Sem título-1.png" alt="">
+                            </div>
+                            <div class="contentBx">
+                                <h3>Homesen Portátil 300W Painel Flexível Solar Kit 12/24V Interruptor USB</h3>
+                                <h2 class="price">R$ 789<small>,00</small></h2>
+                                <a href="#" class="buy">Mais Informações</a>
+                            </div>
+                        </div>
+                    </div><div class="card swiper-slide">
+                        <div class="card2">
+                            <div class="imgBx">
+                                <img src="./kit-placa.png" alt="">
+                            </div>
+                            <div class="contentBx">
+                                <h3>Kit Painel Solar - Kit Completo de Energia Solar com Bateria de Lítio e Inversor</h3>
+                                <h2 class="price">R$ 835<small>,99</small></h2>
+                                <a href="#" class="buy">Mais Informações</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card swiper-slide">
+                        <div class="card2">
+                            <div class="imgBx">
+                                <img src="./kit-3placas.png" alt="">
+                            </div>
+                            <div class="contentBx">
+                                <h3>Kit Placa Solar com 3 / PLACA 3TPS1.2-77-24-210W</h3>
+                                <h2 class="price">R$ 368<small>,00</small></h2>
+                                <a href="#" class="buy">Mais Informações</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <div class="card2">
-                <div class="imgBx2">
-                    <img src="Captura_de_Tela__3_-removebg-preview.png" alt="">
-                </div>
-                <div class="contentBx2">
-                    <h3>Kit Gerador Energia Solar
-                        2,30 kWp - Microinversor
-                        Deye
-                        </h3>
-                        <h2 class="price2">R$ 7.099,<small></small>00</h2>
-                        <a href="#" class="buy2">Mais informações</a>
-                </div>
-            </div>
-
-            <div class="card3">
-                <div class="imgBx3">
-                    <img src="KIT-3-removebg-preview.png" alt="">
-                </div>
-                <div class="contentBx3">
-                    <h3>Kit 18,6kWp Módulo shinefar 465W mono - Par de conectores MC4
-                        </h3>
-                        <h2 class="price3">12.500,<small></small>00</h2>
-                        <a href="#" class="buy3">Mais informações</a>
-                </div>
+            <div class="rolagen">
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
             </div>
         </div>
+        </section>
     </main>
 
 
@@ -151,13 +200,13 @@
                     <h3>Blog</h3>
                 </li>
                 <li>
-                    <a href="#" class="footer-link">Tech</a>
+                    <a href="./Janelas/error.html" class="footer-link">Tech</a>
                 </li>
                 <li>
-                    <a href="#" class="footer-link">Adventures</a>
+                    <a href="./Janelas/error.html" class="footer-link">Adventures</a>
                 </li>
                 <li>
-                    <a href="#" class="footer-link">Music</a>
+                    <a href="./Janelas/error.html" class="footer-link">Music</a>
                 </li>
             </ul>
 
@@ -166,13 +215,13 @@
                     <h3>Products</h3>
                 </li>
                 <li>
-                    <a href="#" class="footer-link">App</a>
+                    <a href="./Janelas/error.html" class="footer-link">App</a>
                 </li>
                 <li>
-                    <a href="#" class="footer-link">Desktop</a>
+                    <a href="./Janelas/error.html" class="footer-link">Desktop</a>
                 </li>
                 <li>
-                    <a href="#" class="footer-link">Cloud</a>
+                    <a href="./Janelas/error.html" class="footer-link">Cloud</a>
                 </li>
             </ul>
 
@@ -201,5 +250,6 @@
 
     <script src="mobile-navbar.js"></script>
 </body>
-
+<script src="swiper-bundle.min.js"></script>
+<script src="script.js"></script>
 </html>

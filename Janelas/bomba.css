@@ -7,9 +7,6 @@
 body{
   background-color: #000;
 }
-html{
-    h
-}
 
 a {
   color: #fff;
@@ -27,15 +24,16 @@ a:hover {
   width: 115px;
 }
 header{
+  margin-bottom: 20px;
   position: fixed;
   z-index: 2;
   width: 100%;
-  color: #D99117;
+  color: #F6C937;
   transition: 1.2s ease;
 }
 
 header.scrolled{
-  background-color: #D99117;
+  background-color: #F6C937;
   padding: 1px 0.5% 1% 0%;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
 }
@@ -46,7 +44,7 @@ nav {
   align-items: center;
   font-family:  'Passion One', cursive;
   font-size: 30px;
-  background: #D99117;
+  background: #F6C937;
   height: 18vh;
 }
 .login-button {
@@ -54,7 +52,8 @@ nav {
 }
 
 .login-button button {
-  background-color: #dcb054;
+  border-radius: 15px;
+  background-color: #000000;
   color: white;
   border: none;
   padding: 10px 28px;
@@ -147,15 +146,173 @@ nav {
 .mobile-menu.active .line3 {
   transform: rotate(45deg) translate(-5px, -7px);
 }
+/*-------------------- Kit bomba -----------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+.bomba{
+  height: 840px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.bomb2{
+    flex-direction: column;
+}
+
+.bomba img{
+    background-color: white;
+    margin-top: 250px;
+}
+.bomba h1{
+    width: 100%;
+    height: 13%;
+    margin-top: 50px;
+    margin-left: 90px;
+    font-family: 'Passion One';
+    font-size: 70px;
+    color: #ffda5f;
+
+}
+
+.bomba .h2bomb {
+    color: #fff;
+    margin-top: 245px;
+    font-family: 'Passion One';
+    font-size: 40px;
+    margin-left: 90px;
+
+}
+
+.bomb2 p{
+    font-family: 'Passion One';
+    font-size: 26px;
+    display: flex;
+    color: #fff;
+    margin-left: 90px;
+}
+.parcel-button {
+  display: flex;
+  align-items: center;
+  padding-top: 100px;
+  padding-left: 73px;
+  border: none;
+  background-color: #000000;
+  font-family: 'Passion One';
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.parcel-button .text {
+  margin-right: 10px;
+}
+
+.parcel-button i {
+  font-size: 18px;
+}
+
+.buy-button button {
+  background-color: #F6C937;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  margin-top: 105px;
+  margin-left: 88px;
+  height: 90px;
+  width: 280px;
+  line-height: 70px;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: 'Passion One';
+  transition: transform 0.5s;
+}
+
+.buy-button button:hover {
+  transform: scale(1.1);
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+ height: 100px;
+ width: 300px
+}
+
+/*-tabela que aparece-*/
+
+.janela-modal {
+  border: 2px solid #000000;
+  background-color: white;
+  border-radius: 4px;
+  padding: 2px;
+  position: relative;
+  width: 100vw;
+  height: 500px;
+  margin: 50px auto;
+
+}
+.modal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  background-color: #F6C937;
+  color: rgb(0, 0, 0);
+  padding-right: 20px;
+}
+.modal h2 {
+  padding-left: 20px;
+}
+
+.boox p {
+  color: rgb(71, 71, 71);
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.boox ul {
+  border: solid 2px #7a7a7a;
+  list-style-type: none;
+  padding: 20px;
+}
+
+.boox li {
+  margin-bottom: 10px;
+}
+
+.boox span {
+  font-weight: bold;
+}
+.boox {
+  padding: 20px;
+}
+.close-button{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #7a7a7a;
+}
+
+
+
+
+
+
 
 /*------------- RODAPE -------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
 
 :root {
-    --color-neutral-0: #0e0c0c;
-    --color-neutral-10: #171717;
-    --color-neutral-30: #a8a29e;
-    --color-neutral-40: #f5f5f5;
+    --color-neutral-0: #000000;
+    --color-neutral-10: #F6C937;
+    --color-neutral-30: #000000;
+    --color-neutral-40: #ffffff;
 
 }
 
@@ -171,7 +328,7 @@ nav {
 footer {
   font-family: 'Inter', sans-serif;
   width: 100%;
-    color: var(--color-neutral-40);
+  color: var(--color-neutral-40);
   margin-top: 700px;
 }
 
@@ -234,7 +391,7 @@ span {
 }
 
 #facebook {
-    background-color: #4267b3;
+    background-color: #0b3382;
 }
 
 #whatsapp {

@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="/style2.css">
+    <link rel="stylesheet" href="./bomba.css">
 
 <body>
     <header>
@@ -24,7 +23,7 @@
             <ul class="nav-list">
                 <li><a href="/">Home</a></li>
                 <li><a href="/">Sobre</a></li>
-                <li><a href="/">Projetos</a></li>
+                <li><a href="/">Produtos</a></li>
                 <li><a href="/">Contatos</a></li>
             </ul>
             <div class="login-button">
@@ -32,18 +31,50 @@
             </div>
         </nav>
     </header>
-
-    <main>
+<!--main-->
         <div class="bomba">
-            <img src="bomba.svg" alt="">
+            <img src="Captura_de_Tela__3_-removebg-preview-removebg-preview.png" alt="">
             <div class="bomb2">
-                <h2 class="h2bomb">Placa Solar Fotovoltaica 550W<br>Monocristalina-LNVU-550M</h2>
-                <h1>R$1.299,00</h1>
-                <p>Ou 12x de R$ 108,25 </p>
-                    </div>
-        </div>
-    </main>
-   
+                <h2 class="h2bomb">Kit Bomba - Solar Tpon<br>Placa 3TPS.2-77-24-210W</h2>
+                <h1>R$2,428,50</h1>
+                <p>Ou 12x de R$ 108,25</p>
+              
+                <button id="show-or-hide" class="parcel-button">
+                  <span class="text">Opções de Parcelamento</span>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+                <div href="/cadastro.html" class="buy-button">
+                  <button>Comprar <i class="fas fa-cart-shopping"></i></button>
+                </div>               
+            </div>  
+        </div>     
+  
+    <div class="janela-modal" id="janela-modal">
+            <div class="modal">
+                  <h2>Opções de Parcelamento</h2>
+                  <button class="close-button">X</button>
+                </div>
+                <div class="boox">
+                  <h4>Placa Solar Fotovoltaica 550W Monocristalina-LNVU-550M</h4>
+                  <div class="opcoes-parcelamento">
+                    <ul>
+                      <li>1x sem juros <span>R$1.299,00</span></li>
+                      <li>2x sem juros <span>R$664,37</span></li>
+                      <li>3x sem juros <span>R$447,04</span></li>
+                      <li>4x sem juros <span>R$340,07</span></li>
+                      <li>5x sem juros <span>R$275,49</span></li>
+                      <li>6x sem juros <span>R$231,08</span></li>
+                      <li>7x sem juros <span>R$199,86</span></li>
+                      <li>8x sem juros <span>R$176,52</span></li>
+                      <li>9x sem juros <span>R$158,11</span></li>
+                      <li>10x sem juros <span>R$143,37</span></li>
+                      <li>11x sem juros <span>R$131,78</span></li>
+                      <li>12x sem juros <span>R$122,47</span></li>
+                    </ul>
+                  </div>
+            </div>
+    </div>
+<!--/main-->
 
 
 
@@ -52,7 +83,7 @@
     <footer>
         <div id="footer_content">
             <div id="footer_contacts">
-                <img src="lúmen-energy-logo-branco (1).png" alt="logo" class="Mozo">
+                <img src="/lum" alt="logo" class="Mozo">
                 <p><span>Iluminando um<br></span>Futuro Sustentável</p>
 
                 <div id="footer_social_media">
@@ -60,7 +91,7 @@
                         <i class="fa-brands fa-instagram"></i>
                     </a>
 
-                    <a href="#" class="footer-link" id="facebook">
+                    <a href="#" class="footer-link" id="facebcoook">
                         <i class="fa-brands fa-facebook-f"></i>
                     </a>
 
@@ -122,7 +153,7 @@
             2023 all rights reserved
         </div>
     </footer>
-
+    <script src="bomba.js"></script>
     <script src="mobile-navbar.js"></script>
 </body>
 

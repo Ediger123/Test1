@@ -1,325 +1,246 @@
-/*----------------Card 1-----------------*/
-@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.card{
-    position: absolute;
-    width: 300px;
-    height: 380px;
-    background: #122936;
-    border-radius: 20px;
-    overflow: hidden;
-    left: 400px;
-    top: 2500px;
-    z-index: 1;
-    font-family: 'Passion One';
-}
-
-
-.card::before{
-    content: 'FONE';
-    position: absolute;
-    top: -50%;
-    width: 100%;
-    height: 100%;
-    background: #e7ab28;
-    transform: skewY(345deg);
-    transition: 0.5s;
-}
-
-.card:hover::before{
-    transform: skewY(390deg);
-    top: -70%;
-}
-
-.card::after{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    font-weight: 600;
-    font-size: 3.5em;
-    color: rgba(0, 0, 0, 0.1);
-}
-
-.card .imgBx{
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 20px;
-    z-index: 1;
-}
-
-.card .imgBx img{
-    max-width: 90%;
-    transition: 0.5s;
-}
-
-.card:hover .imgBx img{
-    max-width: 50%;
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
 }
-
-.card .contentBx{
-    position: relative;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    z-index: 1;
+.slide-container{
+  max-width: 1120px;
+  width: 100%;
+  padding: 0px 0;
 }
-
-.card .contentBx h3{
-    font-size: 25px;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-top: -60px;
+.slide-content{
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
 }
-
-.card .contentBx .price{
-    font-size: 40px;
-    color: #fff;
-    font-weight: 500;
-    letter-spacing: 1px;
-    margin-top: 40px;
-}
-
-.card .contentBx .buy{
-    position: relative;
-    padding: 10px 30px;
-    margin-top: 15px;
-    color: #fff;
-    text-decoration: none;
-    background: #e7ab28;
-    border-radius: 30px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: 0.5s;
-}
-
-/*---------- CARD 2 ------------------------*/
-
-@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .card2{
-    position: absolute;
-    width: 300px;
-    height: 380px;
-    background: #122936;
-    border-radius: 20px;
-    overflow: hidden;
-    left: 800px;
-    top: 2500px;
-    z-index: 1;
-    font-family: 'Passion One';
+  font-family: 'Passion One', sans-serif;
+  box-shadow: -14px 19px 10px 0px rgba(0, 0, 0, 0.534);
+  border-radius: 25px;
+  background-color: #FFF;
+}
+.image-content,
+.card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+.image-content{
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+.overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #e7ab28;
+  border-radius: 25px 25px 0 25px;
+}
+.overlay::before,
+.overlay::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #e7ab28;
+}
+.overlay::after{
+  border-radius: 0 25px 0 0;
+  background-color: #FFF;
+}
+.card-image{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #FFF;
+  padding: 3px;
+}
+.card-image .card-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #e7ab28;
+}
+.name{
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.description{
+  font-size: 14px;
+  color: #707070;
+  text-align: center;
+}
+.button{
+  border: none;
+  font-size: 16px;
+  color: #FFF;
+  padding: 8px 16px;
+  background-color: #e7ab28;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.rolagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    padding-left: 10px;
+}
+.button:hover{
+  background: #e7ab28;
+}
+.swiper-navBtn{
+    color: white;
 }
 
-
-.card2::before{
-    content: 'FONE';
-    position: absolute;
-    top: -50%;
-    width: 100%;
-    height: 100%;
-    background: #e7ab28;
-    transform: skewY(345deg);
-    transition: 0.5s;
+.swiper-navBtn{
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+.swiper-navBtn:hover{
+  color: #e7ab28;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+  font-size: 35px;
+}
+.swiper-button-next{
+  right: 0;
+}
+.swiper-button-prev{
+  left: 0;
+}
+.swiper-pagination-bullet{
+  background-color: #ffffff;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active{
+  background-color: #e7ab28;
 }
 
+@media screen and (max-width: 768px) {
+  .slide-content{
+    margin: 0 10px;
+  }
+  .swiper-navBtn{
+    display: none;
+  }
+}
+.card2:before{
+  content: '';
+  position: absolute;
+  top: -50%;
+  width: 100%;
+  height: 100%;
+  background: #e7ab28;
+  transform: skewY(345deg);
+  transition: 0.5s;
+  
+}
 .card2:hover::before{
-    transform: skewY(390deg);
-    top: -70%;
+  transform: skewY(390deg);
+  top: -70%;
 }
-
 .card2::after{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    font-weight: 600;
-    font-size: 3.5em;
-    color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-weight: 600;
+  font-size: 7.9em;
+  color: rgba(0, 0, 0, 0.1);
+}
+.card2 .imgBx{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  z-index: 1;
 }
 
-.card2 .imgBx2{
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.card2 .imgBx img{
+  max-width: 80%;
+  background-size: cover;
+  transition: 0.5s;
+}
+.card2:hover .imgBx img{
+  height: 80px;
+  max-width: 70%;
+}
+.card2 .contentBx{
+  position: relative;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index:1;
+
+}
+.card2 .contentBx h3{
+  text-align: center;
+  font-size: 18px;
+  color: #000000;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.card2 .contentBx .price{
+  font-size: 24px;
+  color: #010101;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.card2 .contentBx .buy{
+  position: relative;
+  top: 200px;
+  opacity: 0;
+  padding: 10px 30px;
+  margin-top: 15px;
+  color: #000000;
+  text-decoration: none;
+  background: #e7ab28;
+  border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+.card2:hover .contentBx .buy{
+  top: 15px;
+  opacity: 1;
+}
+.card2{
+  position: relative;
+  width: 320px;
+  height: 420px;
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;}
+
+  .card2 .contentBx h2{
     padding-top: 20px;
-    z-index: 1;
-}
-
-.card2 .imgBx2 img{
-    max-width: 90%;
-    transition: 0.5s;
-}
-
-.card2:hover .imgBx2 img{
-    max-width: 50%;
-
-}
-
-.card2 .contentBx2{
-    position: relative;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    z-index: 1;
-}
-
-.card2 .contentBx2 h3{
-    font-size: 25px;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-top: -50px;
-}
-
-.card2 .contentBx2 .price2{
-    font-size: 40px;
-    color: #fff;
-    font-weight: 500;
-    letter-spacing: 1px;
-    margin-top: 30px;
-}
-
-.card2 .contentBx2 .buy2{
-    position: relative;
-    padding: 10px 30px;
-    margin-top: 15px;
-    color: #fff;
-    text-decoration: none;
-    background: #e7ab28;
-    border-radius: 30px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: 0.5s;
-}
-
-/*--------------- CARD 3 ------------------------*/
-
-@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.card3{
-    position: absolute;
-    width: 300px;
-    height: 380px;
-    background: #122936;
-    border-radius: 20px;
-    overflow: hidden;
-    left: 1200px;
-    top: 2500px;
-    z-index: 1;
-    font-family: 'Passion One';
-}
-
-
-.card3::before{
-    content: 'FONE';
-    position: absolute;
-    top: -50%;
-    width: 100%;
-    height: 100%;
-    background: #e7ab28;
-    transform: skewY(345deg);
-    transition: 0.5s;
-}
-
-.card3:hover::before{
-    transform: skewY(390deg);
-    top: -70%;
-}
-
-.card3::after{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    font-weight: 600;
-    font-size: 3.5em;
-    color: rgba(0, 0, 0, 0.1);
-}
-
-.card3 .imgBx3{
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 20px;
-    z-index: 1;
-}
-
-.card3 .imgBx3 img{
-    max-width: 90%;
-    transition: 0.5s;
-}
-
-.card3:hover .imgBx3 img{
-    max-width: 50%;
-
-}
-
-.card3 .contentBx3{
-    position: relative;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    z-index: 1;
-}
-
-.card3 .contentBx3 h3{
-    font-size: 25px;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-top: -20px;
-}
-
-.card3 .contentBx3 .price3{
-    font-size: 40px;
-    color: #fff;
-    font-weight: 500;
-    letter-spacing: 1px;
-    margin-top: 20px;
-}
-
-.card3 .contentBx3 .buy3{
-    position: relative;
-    padding: 10px 30px;
-    margin-top: 15px;
-    color: #fff;
-    text-decoration: none;
-    background: #e7ab28;
-    border-radius: 30px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: 0.5s;
-}
+  }
+  .card2 .contentBx .buy:hover{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    width: 80%;
+    height: 50%;
+    font-size: 20px;
+    transition: 0,3s;
+  }
 
 
 
@@ -333,7 +254,7 @@
 
 .casa{
    float: right;
-   width: 1000px;
+   width: 50%;
    float: left;
    justify-content: space-evenly;
 }
@@ -341,7 +262,7 @@
 .column{
     display: flex;
     flex-direction: row-reverse;
-    gap: 200px;
+    gap: 100px;
     font-family: 'Passion One';
 }
 
@@ -354,12 +275,12 @@
 
 .row  h2{
     color: #F6C937;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .row p{
     color: #fff;
-    font-size: 28px;
+    font-size: 22px;
     margin-top: 10px;
     text-align: center;
 }
@@ -372,57 +293,15 @@
     color: #fff;
     font-family: 'Righteous';
     font-size: 40px;
+    display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 50px;
-    margin-left: 84vh;
+    
 }
 
 .produtos h1{
     height: 100px;
 }
 
-/*-------------------- Kit bomba -----------------------*/
-@import url('https://fonts.googleapis.com/css2?family=Jomhuria&display=swap');
 
-.bomba{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-}
-
-.bomb2{
-    display: flex;
-    flex-direction: column;
-}
-
-.bomba img{
-    margin-top: 250px;
-    margin-left: 350px;
-}
-.bomba h1{
-    width: 100%;
-    height: 100%;
-    margin-top: 30px;
-    margin-left: 120px;
-    font-family: 'Passion One';
-    font-size: 70px;
-    color: #FFEFBC;
-
-}
-
-.bomba .h2bomb {
-    color: #fff;
-    margin-top: 310px;
-    font-family: 'Passion One';
-    font-size: 40px;
-    margin-left: 120px;
-
-}
-
-.bomb2 p{
-    display: flex;
-    margin-top: 0px;
-    color: #fff;
-    margin-left: 120px;
-}
