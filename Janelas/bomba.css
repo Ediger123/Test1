@@ -5,17 +5,21 @@
 }
 
 body{
-  background-color: #000;
+  background-color: #2c2c2c;
 }
 
-a {
-  color: #fff;
+.nav-list a {
+  color: #000000;
   text-decoration: none;
   transition: 0.3s;
 }
 
 a:hover {
   opacity: 0.7;
+}
+.login-button a {
+  text-decoration: none;
+  color: white;
 }
 
 .logoLumen img{
@@ -152,6 +156,15 @@ nav {
   margin: 0;
   padding: 0;
 }
+main{
+  height: 40vh;
+}
+
+.container-flex{
+  z-index: 99999999; /* Z-index menor que a janela modal */
+  max-height: 10px;
+}
+
 .bomba{
   height: 840px;
     width: 100%;
@@ -201,12 +214,13 @@ nav {
   padding-top: 100px;
   padding-left: 73px;
   border: none;
-  background-color: #000000;
+  background-color: #2c2c2c;
   font-family: 'Passion One';
   color: #fff;
   font-size: 22px;
   cursor: pointer;
 }
+
 
 .parcel-button .text {
   margin-right: 10px;
@@ -215,11 +229,16 @@ nav {
 .parcel-button i {
   font-size: 18px;
 }
+.buy-button a{
+  color: black;
+  text-decoration: none;
+}
 
 .buy-button button {
   background-color: #F6C937;
   color: #fff;
   border: none;
+  text-transform: none;
   border-radius: 20px;
   margin-top: 105px;
   margin-left: 88px;
@@ -247,25 +266,41 @@ nav {
   border: 2px solid #000000;
   background-color: white;
   border-radius: 4px;
-  padding: 2px;
   position: relative;
-  width: 100vw;
+  width: 70vw;
   height: 500px;
-  margin: 50px auto;
+  margin: 240px auto;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 9997;
+}
+.janela-modal.abrir{
+  display: flex;
+
+}
+.opcoes-de-parcelamento ul{
+  gap: 200px;
 
 }
 .modal {
+  min-width:450px;
+  height: 500px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(1px) ;
+  color: rgb(0, 0, 0);
+}
+.mm {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  height: 50px;
+  flex-direction: row;
   width: 100%;
-  background-color: #F6C937;
-  color: rgb(0, 0, 0);
-  padding-right: 20px;
-}
-.modal h2 {
+  height: 50px;
+  background-color: #ffda5f;
   padding-left: 20px;
+  padding-right: 20px;
 }
 
 .boox p {
@@ -290,14 +325,36 @@ nav {
 .boox {
   padding: 20px;
 }
-.close-button{
+.mm h2{
+  padding-top: 10px;
+  
+}
+.fechar{
   background-color: transparent;
   border: none;
-  outline: none;
   cursor: pointer;
   font-size: 20px;
-  color: #7a7a7a;
+  color: #000000;
 }
+
+@keyframes abrirmodal{
+  from{
+    opacity: 0;
+    transform: translate(0,-20px, -5px);
+  }
+  to{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+  }
+}
+
+.abrir .modal{
+  animation: abrirmodal 0.5s;
+}
+.container-flex.blur {
+  backdrop-filter: blur(1px);
+}
+
 
 
 
@@ -331,8 +388,7 @@ footer {
   color: var(--color-neutral-40);
   margin-top: 700px;
 }
-
-.LumenLogo{
+.Mozo{
     margin-left: 15px;
     height: 100px;
     width: 115px;
